@@ -15,4 +15,10 @@ feature 'List a space' do
       click_button("List a space")
       expect(page).to have_field("description")
     end
+
+    scenario 'displays input field for price per night' do
+      visit '/'
+      click_button("List a space")
+      expect(page).to have_field("price")
+    end
 end
