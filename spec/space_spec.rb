@@ -5,8 +5,10 @@ require 'dm-postgres-adapter'
 
 describe Space do
 
+  let (:space) { Space.new }
+
   it "is actually a class" do
-    space = Space.new
+    space
   end
 
   it "can connect to the database" do
@@ -16,6 +18,10 @@ describe Space do
  :database => 'makers_bnb',
  :user     => 'student',
 }
+  end
+
+  it "can return a listing" do
+
   end
 
 end
