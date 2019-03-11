@@ -4,9 +4,15 @@ feature 'List a space' do
         expect(page).to have_button("List a space")
     end
 
-    scenario ' displays a form with name input field' do
+    scenario 'displays a form with name input field' do
       visit '/'
       click_button("List a space")
       expect(page).to have_field("name")
+    end
+
+    scenario 'displays input field for description of space' do
+      visit '/'
+      click_button("List a space")
+      expect(page).to have_field("description")
     end
 end

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>List a space</title>
     <!-- <link rel = "stylesheet" type = "text/css" href = "css/style.css" </link> -->
-    <form>
+    <form method='post' action='/spaces/new'>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required minlength="4" maxlength="50" size="50">
+      <input type="text" id="description" name="description" required minlength="10" maxlength="200" size="200">
     </form>
   </head>
   <body>

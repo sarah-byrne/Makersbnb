@@ -1,7 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/Makersbnb/spec/features/list_space_feature_spec.rb": [
+      "/Users/student/Documents/Projects/Makersbnb/spec/features/list_space_feature_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         1,
@@ -16,6 +22,6 @@
         null
       ]
     },
-    "timestamp": 1552319581
+    "timestamp": 1552321581
   }
 }
