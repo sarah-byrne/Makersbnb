@@ -2,7 +2,7 @@ require 'sinatra/base'
 require 'rubygems'
 require 'data_mapper'
 
-class Space < Sinatra::Base
+class Makersbnb < Sinatra::Base
 
   get '/' do
     'Hello World'

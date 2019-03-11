@@ -8,6 +8,7 @@ gem 'rubocop', '0.56.0'
 gem 'data_mapper'
 gem 'json', '~> 1.6'
 gem 'dm-postgres-adapter'
+gem 'dm-migrations'
 
 group :test do
   gem 'rspec'

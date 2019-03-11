@@ -133,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   data_mapper
+  dm-migrations
   dm-postgres-adapter
   json (~> 1.6)
   pg
