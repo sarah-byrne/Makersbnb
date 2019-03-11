@@ -15,6 +15,7 @@ require 'simplecov'
 require 'simplecov-console'
 require 'setup_test_database.rb'
 require "./app.rb"
+require "./spec/features/features_helper.rb"
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
