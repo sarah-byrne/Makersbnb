@@ -19,4 +19,10 @@ feature 'List a space' do
       get_to_new_space_page
       expect(page).to have_field("price")
     end
+
+    scenario 'displays input field for the date the space is available (MVP. Multiple dates to be implemented later)' do
+      visit '/'
+      get_to_new_space_page
+      expect(page).to have_field("price")
+    end
 end
