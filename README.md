@@ -41,14 +41,17 @@ As a new user
 So I can use the site
 I want to be able to sign up
 
+<span style="color:blue">
 As a signed up user
 So I can rent out my space
 I want to list my space
+</span>
 
 As a signed up user
 So I can rent out my space
 I want to list multiple spaces
 
+<span style="color:blue">
 As a signed up user
 So people can identify my space
 I want to name my space
@@ -60,22 +63,31 @@ I want to provide a short description for my space
 As a signed up user
 So I know how much to charge people
 I want to list a price per night
+</span>
 
 As a host
 So people know when I'm offering my space
 I want to give a range of dates
 
+<span style="color:blue">
+As a host
+So people know when I'm offering my space
+I want to give a single date
+
 As a guest
 So I can rent a space
 I want to request to hire a space for one night
+</span>
 
 As a host
 So I can know exactly when I'm renting out a space
 I want to approve a booking
 
+<span style="color:blue">
 As a host
 So there aren't double bookings
 I want my space to be marked unavailable on booked dates
+</span>
 
 As a host
 So I can choose the guest
