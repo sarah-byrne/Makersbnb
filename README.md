@@ -36,60 +36,60 @@ Basic payment implementation though Stripe.
 
 User stories
 ------------
-<p>
-As a new user
-So I can use the site
-I want to be able to sign up
-<P>
+
+As a new user<br>
+So I can use the site<br>
+I want to be able to sign up<br>
+<br>
 <span style="color:blue">
-As a signed up user
-So I can rent out my space
-I want to list my space
+As a signed up user<br>
+So I can rent out my space<br>
+I want to list my space<br>
 </span>
-<p>
-As a signed up user
-So I can rent out my space
-I want to list multiple spaces
-<p>
+<br>
+As a signed up user<br>
+So I can rent out my space<br>
+I want to list multiple spaces<br>
+<br>
 <span style="color:blue">
-As a signed up user
-So people can identify my space
-I want to name my space
-<p>
-As a signed up user
-So I can best present my space
-I want to provide a short description for my space
-<p>
-As a signed up user
-So I know how much to charge people
-I want to list a price per night
+As a signed up user<br>
+So people can identify my space<br>
+I want to name my space<br>
+<br>
+As a signed up user<br>
+So I can best present my space<br>
+I want to provide a short description for my space<br>
+<br>
+As a signed up user<br>
+So I know how much to charge people<br>
+I want to list a price per night<br>
 </span>
-<p>
-As a host
-So people know when I'm offering my space
-I want to give a range of dates
-<p>
+<br>
+As a host<br>
+So people know when I'm offering my space<br>
+I want to give a range of dates<br>
+<br>
 <span style="color:blue">
-As a host
-So people know when I'm offering my space
-I want to give a single date
-<p>
-As a guest
-So I can rent a space
-I want to request to hire a space for one night
+As a host<br>
+So people know when I'm offering my space<br>
+I want to give a single date<br>
+<br>
+As a guest<br>
+So I can rent a space<br>
+I want to request to hire a space for one night<br>
 </span>
-<p>
-As a host
-So I can know exactly when I'm renting out a space
-I want to approve a booking
-<p>
+<br>
+As a host<br>
+So I can know exactly when I'm renting out a space<br>
+I want to approve a booking<br>
+<br>
 <span style="color:blue">
-As a host
-So there aren't double bookings
-I want my space to be marked unavailable on booked dates
+As a host<br>
+So there aren't double bookings<br>
+I want my space to be marked unavailable on booked dates<br>
 </span>
-<p>
-As a host
-So I can choose the guest
-I want spaces to still be bookable until I've confirmed a booking
+<br>
+As a host<br>
+So I can choose the guest<br>
+I want spaces to still be bookable until I've confirmed a booking<br>
 
