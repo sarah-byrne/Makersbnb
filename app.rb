@@ -11,7 +11,7 @@ class Space < Sinatra::Base
   end
 
   post '/spaces/new' do
-    redirect '/spaces/new'
+    "TO DO - persist new space and go to Spaces page"
   end
 
   run! if app_file == $0

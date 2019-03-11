@@ -25,4 +25,10 @@ feature 'List a space' do
       get_to_new_space_page
       expect(page).to have_field("price")
     end
+
+    scenario 'has a button to submit new listing' do
+      visit '/'
+      get_to_new_space_page
+      expect(page).to have_button("List my space")
+    end
 end
