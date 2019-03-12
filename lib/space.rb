@@ -9,6 +9,8 @@ end
 
 class Space
 
+  attr_reader :name, :available
+
   include DataMapper::Resource
 
   property :id,           Serial
@@ -20,6 +22,11 @@ class Space
 
   def self.add(name:, description:, price:, date:)
     Space.create(name: name, description: description, price: price, date: date)
+  end
+
+  def book(name)
+    entry = Space.first(:name => name)
+    entry.update(:available => false)
   end
 
 end
