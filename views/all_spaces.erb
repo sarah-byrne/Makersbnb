@@ -1,0 +1,24 @@
+<head>
+  <style>
+    body {
+      background-color: #2E282A;
+              font: Verdana;
+              font-size: 16pt;
+              color: #17BEBB;
+      }
+  </style>
+  <title>All Spaces</title>
+</head>
+<body>
+    <% @spaces.each do |space| %>
+      <div>
+        <%= space.name %>
+        <%= space.description %>
+        <form method="get" action="/spaces/1">
+          <input type="hidden" name="name" value="<%= space.name%>">
+          <input type="submit" value='Book this space'/>
+        </form>
+      </div>
+    <% end %>
+</body>
+</html>

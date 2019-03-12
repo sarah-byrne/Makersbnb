@@ -1,0 +1,40 @@
+  <head>
+  <!-- <link rel="stylesheet" type="text/css" href="..Public/style.css"> -->
+    <!-- <meta charset="utf-8"> -->
+    <style>
+      body {
+              background-color: #2E282A;
+              font: Verdana;
+              font-size: 16pt;
+              color: #17BEBB;
+              }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+
+      input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+      }
+    </style>
+    <title>List a space</title>
+  </head>
+  <body>
+    <div align="center">
+    <form method='post' action='/spaces/new'>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="4" maxlength="25" size="50">
+      <p><label for="description">Description:</label>
+      <textarea rows="3" columns="100" id="description" name="description" required minlength="10" maxlength="200" size="200"></textarea>
+      <p><label for="price">Price £:</label>
+        <input type="number" step="1" id="price" name="price" required min="0" minlength="4" maxlength="10" size="50">
+      <p><label for="date">Date available:</label>
+        <input type="date" id="date" name="date"
+         value="2019-03-01"
+         min="2019-03-01" max="2020-12-31">
+      <input type="submit" value="List my space">
+    </form>
+    </div>
+  </body>
