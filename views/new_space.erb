@@ -1,20 +1,28 @@
   <head>
   <!-- <link rel="stylesheet" type="text/css" href="..Public/style.css"> -->
     <!-- <meta charset="utf-8"> -->
-    <style>input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   /* display: none; <- Crashes Chrome on hover */
-   -webkit-appearance: none;
-   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
+    <style>
+      body {
+              background-color: #2E282A;
+              font: Verdana;
+              font-size: 16pt;
+              color: #17BEBB;
+              }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
 
-input[type=number] {
-   -moz-appearance:textfield; /* Firefox */
-}
-</style>
+      input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+      }
+    </style>
     <title>List a space</title>
   </head>
   <body>
+    <div align="center">
     <form method='post' action='/spaces/new'>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required minlength="4" maxlength="25" size="50">
@@ -28,4 +36,5 @@ input[type=number] {
          min="2019-03-01" max="2020-12-31">
       <input type="submit" value="List my space">
     </form>
+    </div>
   </body>
