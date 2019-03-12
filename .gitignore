@@ -1,1 +1,2 @@
-coverage/*
+coverage/*.json
+makers_bnb.rb
