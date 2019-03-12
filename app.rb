@@ -27,5 +27,13 @@ class Makersbnb < Sinatra::Base
     erb :all_spaces
   end
 
+  get '/spaces/1' do
+    redirect '/requests'
+  end
+
+  get '/requests' do
+    erb :requests
+  end
+
   run! if app_file == $0
 end

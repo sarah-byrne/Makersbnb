@@ -13,7 +13,10 @@
     <% @spaces.each do |space| %>
       <div>
         <%= space.name %>
-      <p><%= space.description %>
+        <%= space.description %>
+        <form method="get" action="/spaces/1">
+          <input type="submit" value='Book this space'/>
+        </form>
       </div>
     <% end %>
 </body>
