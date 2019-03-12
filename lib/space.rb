@@ -16,9 +16,10 @@ class Space
   property :description,  Text
   property :price,        String
   property :available,    Boolean, :default => true
+  property :date,         String
 
-  def self.add(name:, description:, price:)
-    Space.create(name: name, description: description, price: price)
+  def self.add(name:, description:, price:, date:)
+    Space.create(name: name, description: description, price: price, date: date)
   end
 
 end
