@@ -4,6 +4,7 @@ require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
 require "./app.rb"
+require_relative './setup_test_database'
 
 
 # at the top of spec/spec_helper.rb
@@ -43,7 +44,9 @@ Capybara.app = Makersbnb
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-
+  config.before(:each) do
+    setup
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

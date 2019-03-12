@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Makers/Week_6/Makersbnb/spec/space_spec.rb": [
-        1,
-        1,
-        1,
-        1,
+      "/Users/student/Makers/Week_6/Makersbnb/spec/oldspace_spec.rb": [
         1,
         null,
         1,
@@ -18,11 +14,7 @@
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
         null,
         null,
         1,
@@ -31,41 +23,31 @@
         null,
         null
       ],
-      "/Users/student/Makers/Week_6/Makersbnb/lib/space.rb": [
-        1,
-        1,
-        1,
+      "/Users/student/Makers/Week_6/Makersbnb/spec/space_spec.rb": [
         1,
         null,
         1,
         null,
+        2,
+        null,
         1,
-        0,
-        null,
-        null,
-        null,
         1,
         null,
         null,
-        null,
-        null,
-        null,
+        1,
+        1,
         1,
         null,
-        1,
+        null,
         1,
         1,
         1,
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        1,
-        1
+        null
       ]
     },
-    "timestamp": 1552324934
+    "timestamp": 1552385675
   }
 }
