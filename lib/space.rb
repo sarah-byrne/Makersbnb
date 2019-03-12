@@ -2,7 +2,7 @@ require 'rubygems'
 require 'data_mapper'
 
 if ENV['ENVIRONMENT'] == 'test'
-  DataMapper.setup(:default, "sqlite://#{Dir.pwd}/makers_bnb_test.rb")
+  DataMapper.setup(:test, "sqlite://#{Dir.pwd}/makers_bnb_test.rb")
 else
   DataMapper.setup(:default, "sqlite://#{Dir.pwd}/makers_bnb.rb")
 end
