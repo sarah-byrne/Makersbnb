@@ -8,6 +8,13 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/student/Projects/Makersbnb/spec/features/list_space_feature_spec.rb": [
@@ -83,6 +90,6 @@
         null
       ]
     },
-    "timestamp": 1552403910
+    "timestamp": 1552405076
   }
 }

@@ -4,6 +4,7 @@ require 'data_mapper'
 require './lib/space.rb'
 
 class Makersbnb < Sinatra::Base
+    enable :sessions
 
   get '/' do
     erb :index
@@ -28,10 +29,14 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/spaces/1' do
+    #  put booked space name in session (temp for MVP)
+    session[:space_name] = params[:name]
     redirect '/requests'
   end
 
   get '/requests' do
+    #  get space name from session (temp for MVP)
+    @space_name = session[:space_name]
     erb :requests
   end
 
