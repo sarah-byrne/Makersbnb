@@ -1,0 +1,12 @@
+<head>
+  <title>All Spaces</title>
+</head>
+<body>
+    <% @spaces.each do |space| %>
+      <div>
+        <%= space.name %>
+      <p><%= space.description %>
+      </div>
+    <% end %>
+</body>
+</html>

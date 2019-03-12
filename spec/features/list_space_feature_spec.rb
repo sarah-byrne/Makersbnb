@@ -32,3 +32,15 @@ feature 'List a space' do
     expect(page).to have_button('List my space')
   end
 end
+
+feature 'It displays the listing on a new page' do
+  scenario 'displays the listing details' do
+    go_to_new_space_page
+    fill_in('name', :with => 'Oregon Heights')
+    fill_in('description', :with => 'Two-bed mansion')
+    fill_in('price', :with => '250')
+    fill_in('date', :with => '12/03/2019')
+    click_button('List my space')
+    expect(page).to have_content('Oregon Heights')
+  end
+end
