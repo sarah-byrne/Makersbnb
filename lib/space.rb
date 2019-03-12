@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'data_mapper'
 
-if ENV['RACK_ENV'] == 'test'
+if ENV['ENVIRONMENT'] == 'test'
   DataMapper.setup(:default, "sqlite://#{Dir.pwd}/makers_bnb_test.rb")
 else
   DataMapper.setup(:default, "sqlite://#{Dir.pwd}/makers_bnb.rb")
