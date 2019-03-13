@@ -18,4 +18,10 @@ feature 'User can sign up' do
     visit '/'
     expect(page).to have_field('Password confirmation')
   end
+
+  scenario 'it shows sign up button' do
+    visit '/'
+    expect(page).to have_button('Sign up')
+  end
+
 end
