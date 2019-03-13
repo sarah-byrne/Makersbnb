@@ -5,7 +5,7 @@ feature 'Book a space' do
     end
 
     scenario 'see a confirmation' do
-      name = Space.first().name
+      name = Space.first.name
       visit '/spaces'
       click_button('Book this space')
       msg = "You have booked #{name}"
