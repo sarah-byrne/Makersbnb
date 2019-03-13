@@ -8,4 +8,9 @@ feature 'User can sign up' do
     visit '/'
     expect(page).to have_field('Password')
   end
+
+  scenario 'it shows input for password confirmation' do
+    visit '/'
+    expect(page).to have_field('Password confirmation')
+  end
 end
