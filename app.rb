@@ -31,7 +31,8 @@ class Makersbnb < Sinatra::Base
   get '/spaces/1' do
     #  put booked space name in session (temp for MVP)
     session[:space_name] = params[:name]
-    redirect '/requests'
+    erb :calendar
+    #redirect '/spaces/1'
   end
 
   get '/requests' do
