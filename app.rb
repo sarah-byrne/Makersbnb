@@ -7,6 +7,17 @@ require './lib/user.rb'
 class Makersbnb < Sinatra::Base
     enable :sessions
 
+  if ENV['ENVIRONMENT'] == 'test'
+    env = "sqlite://#{Dir.pwd}/makers_bnb_test.rb"
+    DataMapper.setup(:default, env)
+  else
+    env = "sqlite://#{Dir.pwd}/makers_bnb.rb"
+    DataMapper.setup(:default, env)
+  end
+  DataMapper.finalize
+  DataMapper.auto_upgrade!
+  
+  
   get '/' do
     erb :index
   end
@@ -43,7 +54,7 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/user/new' do
-    User.create(name: params[:username], email_address: params[:email_address], password: params[:password])
+    User.add(name: params[:username], email_address: params[:email_address], password: params[:password])
     User.create_instance(params[:username])
     redirect '/spaces'
   end
