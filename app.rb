@@ -39,7 +39,7 @@ class Makersbnb < Sinatra::Base
 
   get '/spaces/1' do
     #  put booked space name in session (temp for MVP)
-    session[:space_name] = params[:name]
+    p session[:space_name] = params[:name]
     erb :calendar
     #redirect '/spaces/1'
   end
@@ -47,7 +47,15 @@ class Makersbnb < Sinatra::Base
   get '/requests' do
     #  get space name from session (temp for MVP)
     @space_name = session[:space_name]
+    @startdate = session[:startdate]
+    @enddate = session[:enddate]
     erb :requests
+  end
+
+  post '/requests' do
+    session[:startdate] = params[:startdate]
+    session[:enddate] = params[:enddate]
+    redirect '/requests'
   end
 
   run! if app_file == $0
