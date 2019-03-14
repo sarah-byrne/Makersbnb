@@ -39,6 +39,9 @@ GEM
       dm-core (~> 1.0.2)
     dm-migrations (1.0.2)
       dm-core (~> 1.0.2)
+    dm-rspec (0.3.0)
+      dm-core
+      dm-validations
     dm-serializer (1.0.2)
       dm-core (~> 1.0.2)
       fastercsv (~> 1.5.3)
@@ -133,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   data_mapper
+  dm-rspec
   dm-sqlite-adapter
   json (~> 1.6)
   rake
