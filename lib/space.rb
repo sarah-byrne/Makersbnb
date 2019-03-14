@@ -23,7 +23,8 @@ class Space
   property :date,         String
 
   def self.add(name:, description:, price:, date:)
-    Space.create(name: name, description: description, price: price, date: date)
+    resource = Space.create(name: name, description: description, price: price, date: date)
+    p "space saved? #{resource.saved?}"
   end
 
   def book(name)

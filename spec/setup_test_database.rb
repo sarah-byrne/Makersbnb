@@ -1,4 +1,5 @@
 require './lib/space'
+require './lib/user'
 
 def setup
   DataMapper.auto_migrate!

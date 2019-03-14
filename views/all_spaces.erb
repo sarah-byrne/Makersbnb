@@ -10,6 +10,9 @@
   <title>All Spaces</title>
 </head>
 <body>
+    <div>
+      Welcome <%= @user.name%>
+    </div>
     <% @spaces.each do |space| %>
       <div>
         <%= space.name %>

@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'rubygems'
 require 'data_mapper'
 require './lib/space.rb'
+require './lib/user.rb'
 
 class Makersbnb < Sinatra::Base
     enable :sessions
@@ -24,6 +25,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/spaces' do
+    @user = User.instance
     @spaces = Space.all()
     erb :all_spaces
   end
@@ -38,6 +40,12 @@ class Makersbnb < Sinatra::Base
     #  get space name from session (temp for MVP)
     @space_name = session[:space_name]
     erb :requests
+  end
+
+  post '/user/new' do
+    User.create(name: params[:username], email_address: params[:email_address], password: params[:password])
+    User.create_instance(params[:username])
+    redirect '/spaces'
   end
 
   run! if app_file == $0
