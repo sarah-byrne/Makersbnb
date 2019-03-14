@@ -22,6 +22,8 @@ class Space
   property :available,    Boolean, :default => true
   property :date,         String
 
+  has n,  :availabilities
+
   def self.add(name:, description:, price:, date:)
     Space.create(name: name, description: description, price: price, date: date)
   end

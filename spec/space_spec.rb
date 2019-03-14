@@ -1,6 +1,7 @@
 require './lib/space'
 
 describe Space do
+  it { should have_many :availabilities }
 
   it "can add a listing" do
     setup
