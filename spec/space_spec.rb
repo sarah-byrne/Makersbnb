@@ -2,6 +2,11 @@ require './lib/space'
 
 describe Space do
   it { should have_many :availabilities }
+  it { should have_property :name }
+  it { should have_property :description }
+  it { should have_property :price }
+  it { should have_property :start_date }
+  it { should have_property :end_date }
 
   it "can add a listing" do
     setup

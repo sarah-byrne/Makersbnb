@@ -14,6 +14,8 @@ class Space
   property :price,        String
   property :available,    Boolean, :default => true
   property :date,         String
+  property :start_date,   Date
+  property :end_date,     Date 
 
   has n,  :availabilities
 
