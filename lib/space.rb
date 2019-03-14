@@ -1,13 +1,6 @@
 require 'rubygems'
 require 'data_mapper'
-
-if ENV['ENVIRONMENT'] == 'test'
-  env = "sqlite://#{Dir.pwd}/makers_bnb_test.rb"
-else
-  env = "sqlite://#{Dir.pwd}/makers_bnb.rb"
-end
-
-DataMapper.setup(:default, env)
+require './lib/availability'
 
 class Space
 
@@ -34,6 +27,3 @@ class Space
   end
 
 end
-
-DataMapper.finalize
-DataMapper.auto_upgrade!
