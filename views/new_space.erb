@@ -30,10 +30,14 @@
       <textarea rows="3" columns="100" id="description" name="description" required minlength="10" maxlength="200" size="200"></textarea>
       <p><label for="price">Price £:</label>
         <input type="number" step="1" id="price" name="price" required min="0" minlength="4" maxlength="10" size="50">
-      <p><label for="date">Date available:</label>
-        <input type="date" id="date" name="date"
+      <p><label for="start_date">Available from:</label>
+        <input type="start_date" id="start_date" name="start_date"
          value="2019-03-01"
          min="2019-03-01" max="2020-12-31">
+      <p><label for="end_date"> to:</label>
+        <input type="end_date" id="end_date" name="end_date"
+          value="2019-03-01"
+          min="2019-03-01" max="2020-12-31">
       <input type="submit" value="List my space">
     </form>
     </div>

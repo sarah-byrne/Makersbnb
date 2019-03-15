@@ -9,6 +9,7 @@ gem 'data_mapper'
 gem 'json', '~> 1.6'
 #gem 'dm-postgres-adapter'
 #gem 'dm-migrations'
+gem 'dm-rspec'
 gem 'dm-sqlite-adapter'
 gem 'sqlite3'
 

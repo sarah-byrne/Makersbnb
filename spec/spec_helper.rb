@@ -2,6 +2,7 @@ ENV['ENVIRONMENT'] = 'test'
 
 require 'capybara'
 require 'capybara/rspec'
+require 'dm-rspec'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
@@ -55,6 +56,7 @@ RSpec.configure do |config|
   config.before(:each) do
     setup
   end
+  config.include(DataMapper::Matchers)
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
