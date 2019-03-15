@@ -6,6 +6,7 @@ class Availability
 
     property :id,           Serial
     property :date,         Date 
+    property :booked,       Boolean 
 
     belongs_to :space
 end

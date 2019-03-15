@@ -4,6 +4,7 @@ require 'date'
 describe Availability do
     it { should belong_to               :space }
     it { should have_property           :date   }
+    it { should have_property           :booked   }
 
     it 'can persist a date that a space is available' do
         # start from an empty Availability table - this is done by auto_migrate! in setup_test_database which is called before each test by spec_helper
