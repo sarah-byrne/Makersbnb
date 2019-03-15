@@ -26,8 +26,9 @@ class Makersbnb < Sinatra::Base
     name = params[:name]
     description = params[:description]
     price = params[:price]
-    date = params[:date]
-    Space.add(name: name, description: description, price: price, date: date)
+    start_date = params[:start_date]
+    end_date = params[:end_date]
+    Space.add(name: name, description: description, price: price, start_date: start_date, end_date: end_date)
     redirect '/spaces'
   end
 
