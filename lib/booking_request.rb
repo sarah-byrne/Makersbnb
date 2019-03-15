@@ -1,15 +1,15 @@
 require 'rubygems'
 require 'data_mapper'
 
-if ENV['ENVIRONMENT'] == 'test'
-  env = "sqlite://#{Dir.pwd}/makers_bnb_test.rb"
-else
-  env = "sqlite://#{Dir.pwd}/makers_bnb.rb"
-end
+# if ENV['ENVIRONMENT'] == 'test'
+#   env = "sqlite://#{Dir.pwd}/makers_bnb_test.rb"
+# else
+#   env = "sqlite://#{Dir.pwd}/makers_bnb.rb"
+# end
 
-DataMapper.setup(:default, env)
+# DataMapper.setup(:default, env)
 
-class Request
+class Booking_request
 
   attr_reader :space_id, :start_date, :end_date
 
@@ -23,5 +23,5 @@ class Request
 
 end
 
-DataMapper.finalize
-DataMapper.auto_upgrade!
+# DataMapper.finalize
+# DataMapper.auto_upgrade!
