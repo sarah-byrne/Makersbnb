@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'rubygems'
 require 'data_mapper'
 require './lib/space.rb'
+require './lib/booking_request.rb'
 
 class Makersbnb < Sinatra::Base
     enable :sessions
@@ -40,15 +41,23 @@ class Makersbnb < Sinatra::Base
   get '/spaces/1' do
     #  put booked space name in session (temp for MVP)
     session[:space_name] = params[:name]
-    redirect '/requests'
+    p "space id #{session[:space_id] = params[:space_id]}"
+    session[:space_id] = params[:space_id]
+    erb :calendar
   end
 
   get '/requests' do
     #  get space name from session (temp for MVP)
     @space_name = session[:space_name]
+    p @booking_request = Booking_request.first(:space_id => "100")
     erb :requests
+  end
+
+  post '/requests' do
+    p session[:space_id]
+    Booking_request.create(space_id: "100", start_date: params[:startdate], end_date: params[:enddate])
+    redirect '/requests'
   end
 
   run! if app_file == $0
 end
-
